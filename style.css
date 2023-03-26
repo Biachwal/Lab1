@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+h4 {
+  font-size: 30px;
+  margin: 0;
+}
+tr,
+td {
+  border: 1px solid;
+}
+.tab1 {
+  border: 1px solid;
+}
+header {
+  position: sticky;
+  height: 100%;
+  background-color: lightgray;
+  margin-top: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 0 10px 2px #aaa;
+  padding: 20px 120px;
+  z-index: 100;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+header:hover {
+  background-color: rgba(0, 0, 0, 0.452);
+  color: rgba(255, 255, 255, 0.74);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 15px;
+  box-shadow: 0 0 10px 5px #aaa;
+  font-size: 18px;
+}
+.name {
+  width: 60%;
+  height: 100%;
+  padding-right: 20%;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+.menu {
+  padding: 10px 10em;
+  gap: 0.1px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  transition: transform 0.4s;
+}
+.menu__text:hover {
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  transition: color 0.4s;
+}
+a:hover {
+  color: rgb(92, 180, 4);
+}
+article,
+section {
+  display: block;
+  padding: 0 120px;
+  font-size: 20px;
+}
+article {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 120px;
+}
+.article__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ol {
+  opacity: 1;
+  position: relative;
+}
+.article__img::before {
+  content: '';
+  width: 350px;
+  height: 350px;
+  background-color: darkgrey;
+  position: absolute;
+  opacity: 0.3;
+  box-shadow: 0 0 6px 10px rgba(169, 169, 169, 0.555);
+}
+.article__table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.article__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 600px;
+  height: 300px;
+  border-radius: 24px;
+  box-shadow: 0 0 8px 5px rgb(255, 255, 0);
+  transition: transform 0.4s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+footer {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  font-size: 18px;
+  text-align: center;
+  background-color: lightgray;
+  box-shadow: 0 0 10px 5px #aaa;
+  font-weight: 700;
+  bottom: 0;
+}
